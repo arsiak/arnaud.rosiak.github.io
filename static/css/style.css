@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+ol, ul {
+  line-height: 1.5em;
+  padding-left: 0;
+  list-style-position: outside;
+  margin: 0;
+  padding: 0;
+}
+
+li li {
+  margin-right: 1em;
+}
+
+li {
+  margin: 0.5em 0;
+}
+
+.list-default {
+  list-style-type: circle;
+}
+
+.list-square {
+  list-style-type: square;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 0.625em;
+  font-size: calc(1em * .625);
+}
+
+body {
+  font-family: "Source Sans Pro";
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-kerning: normal;
+  text-align: left;
+  color: #333;
+  line-height: 1.4em;
+}
+@media (min-width: 900px) {
+  body {
+    font-size: 2rem;
+  }
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.4em;
+}
+
+h2 {
+  font-size: 1.6em;
+  line-height: 1.4em;
+}
+
+h1, h2, h3 {
+  font-family: "Oswald";
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+p + p {
+  text-indent: 1em;
+}
+
+.uppercase {
+  letter-spacing: 0.1em;
+}
+
+small {
+  font-weight: lighter;
+  font-size: 0.6em;
+  color: #888;
+}
+
+.small {
+  font-weight: lighter;
+  font-size: 0.6em;
+  color: #888;
+}
+
+article p:first-of-type:first-letter {
+  font-size: 4.65em;
+  padding: 0 0.1em 0 0;
+  margin: 0;
+  float: left;
+  line-height: 0.9;
+}
+
+.left {
+  text-align: left;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+mark {
+  background-color: yellow;
+  color: black;
+}
+
+ins {
+  text-decoration: underline;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+u {
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+a {
+  line-height: 1.5em;
+}
+
+blockquote {
+  line-height: 1.5em;
+}
+
+pre, code {
+  line-height: 1.5em;
+}
+
+small {
+  line-height: 1.5em;
+}
+
+a {
+  color: grey;
+}
+
+.header {
+  display: flex;
+  padding: 6px 12px;
+  align-items: center;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-between;
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+@media (max-width: 599px) {
+  .header {
+    flex-direction: column;
+  }
+}
+.header__brand {
+  padding: 4px 0;
+}
+.header__navbar__list {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  flex-direction: row;
+}
+@media (max-width: 599px) {
+  .header__navbar__list {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+.header__navbar__list__item {
+  text-align: center;
+}
+.header__navbar__list__item__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 15px;
+}
+
+.projects {
+  display: grid;
+  background-color: red;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 30px;
+  width: 80%;
+  margin: auto;
+  grid-auto-rows: minmax(200px, auto);
+}
+
+.project {
+  border: 1px solid black;
+  margin: 10%;
+  position: relative;
+}
+
+.project_descr {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 1.6rem;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro')
+@import url('https://fonts.googleapis.com/css?family=Oswald')
+
+$source-sans-pro: 'Source Sans Pro'
+$oswald-font: 'Oswald'
+
+html
+  font-size: .625em
+  font-size: calc(1em * .625)
+
+body
+  font-family: $source-sans-pro
+  font-size: 1.6rem
+  font-weight: 400
+  font-kerning: normal
+  text-align: left
+  color: #333
+  line-height: 1.4em
+
+  @include for-tablet-landscape-up
+    font-size: 2rem
+
+h1
+  font-size: 2em
+  line-height: 1.4em
+
+h2
+  font-size: 1.6em
+  line-height: 1.4em
+
+h1, h2, h3
+  font-family: $oswald-font
+  text-transform: uppercase
+  font-weight: 400
+
+p + p
+  text-indent: 1em
+
+.uppercase
+  letter-spacing: 0.1em
+
+small
+  font-weight: lighter
+  font-size: 0.6em
+  color: #888
+
+.small
+  font-weight: lighter
+  font-size: 0.6em
+  color: #888
+
+article p:first-of-type:first-letter
+  font-size: 4.65em
+  padding: 0 .1em 0 0
+  margin: 0
+  float: left
+  line-height: .9
+
+.left
+  text-align: left
+
+.justify
+  text-align: justify
+
+.right
+  text-align: right
+
+.center
+  text-align: center
+
+.uppercase
+  text-transform: uppercase
+
+.lowercase
+  text-transform: lowercase
+
+mark
+  background-color: yellow
+  color: black
+
+ins
+  text-decoration: underline
+
+del
+  text-decoration: line-through
+
+u
+  text-decoration: underline
+
+strong
+  font-weight: bold
+
+em
+  font-style: italic
+
+a
+  line-height: 1.5em
+
+blockquote
+  line-height: 1.5em
+
+pre, code
+  line-height: 1.5em
+
+small
+  line-height: 1.5em

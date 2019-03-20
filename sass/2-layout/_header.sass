@@ -1,0 +1,41 @@
+.header
+    display: flex
+    padding: 6px 12px
+    align-items: center
+    list-style: none
+    flex-direction: row
+    justify-content: space-between
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75)
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75)
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75)
+    -webkit-border-radius: 5px
+    -moz-border-radius: 5px
+    border-radius: 5px
+
+    @include for-phone-only
+        flex-direction: column
+
+    &__brand
+        padding: 4px 0
+
+    &__navbar
+        &__list
+            display: flex
+            flex: 1
+            justify-content: flex-end
+            padding: 0
+            list-style: none
+            text-decoration: none
+            flex-direction: row
+
+            @include for-phone-only
+                flex-direction: column
+                justify-content: space-around
+
+            &__item
+                text-align: center
+
+            &__item__link
+                text-decoration: none
+                text-transform: uppercase
+                padding: 10px 15px
