@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="header">
-        <h1 class="header__brand">Arnaud Rosiak</h1>
+        <h1 class="header__brand"><a href="index.html" class="brand">Arnaud Rosiak</a></h1>
         <nav class="header__navbar">
             <ul class="header__navbar__list">
                 <li class="header__navbar__list__item"><a href="" class="header__navbar__list__item__link">CV</a></li>
@@ -19,29 +19,45 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h1 class="title_projects">Liste de mes projets</h1>
-        <section class="projects">
-            <a href="https://github.com/arsiak/movitech" class="fill-div">
-            <article class="project">
-                <img src="static/images/movitech_screenshot.png" alt="Photo projet moovitech" class="project__img">
-                <h2 class="project_descr"> Movitech </h2>
-            </article>
-            </a>
-
-            <article class="project">
-                <img src="" alt="" class="project__img">
-                <h2 class="project_descr"></h2>
-            </article>
-            <article class="project">
-                <img src="" alt="" class="project__img">
-                <h2 class="project_descr"></h2>
-            </article>
-            <article class="project">
-                <img src="" alt="" class="project__img">
-                <h2 class="project_descr"></h2>
-            </article>
-        </section>
+    <main class="container-descr-project">
+        <h1 class="title_projects">MoviTech</h1>
+        <div class="container-movitech-img">
+            <img class="img-movitech" src="static/images/movitech_screenshot.png"/>
+        </div>
+        <h3> Installer et tester le projet </h3>
+        <ul>
+            <li>Dans ta ligne de commande entre : git clone https://github.com/arsiak/movitech.git</li>
+            <li>Puis déplace toi dans le dossier "movitech" et ouvre "index.html" dans ton navigateur web</li>
+        </ul>
+        <div>
+            <h3>Les technologies</h3>
+        <ul>
+            <li>HTML/CSS, CSS GRID/FLEXBOX</li>
+            <li>JS (ES6)</li>
+            <li>JQUERY</li>
+            <li>API TMDB</li>
+        </ul>
+        </div>
+        <div>
+            <h3>Les fonctionnalités</h3>
+        <ul>
+            <li>Visualiser un film aléatoire pour un genre</li>
+            <li>L'utilisateur peut voir tous les genres de film</li>
+            <li>Voir le meilleur film pour un genre spécifique</li>
+            <li>Voir les détails d'un film aléatoire pour un genre donné</li>
+            <li>Je peux rechercher un film avec son nom</li>
+            <li>Je vois le film le plus pertinent correspondant à ma recherche</li>
+            <li>Lorsque l'utilisateur affiche la page pour la première fois le film le plus populaire apparait</li>
+            <li>Je vois la liste des films similaires au film affiché</li>
+            <li>Je peux afficher les détails d'un film similaire</li>
+            <li>L'utilisateur peut consulter le budget, le nom, le synopsis, les compagnies de production, le chiffre d'affaire ainsi que le poster du film.</li>
+            <li>Lorsque l'utilisateur recherche un film qui n'existe pas, un message d'erreur apparait</li>
+            <li>L'utilisateur peut visualiser les images du film en diaporama</li>
+        </ul>
+    </div>
+    <div>
+        <p>Voir le code source sur <a href="https://github.com/arsiak/movitech"> https://github.com/arsiak/movitech </a> </p>
+    </div>
     </main>
     <footer>
         <p>Made by Arnaud Rosiak with ...</p>

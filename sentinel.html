@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="header">
-        <h1 class="header__brand">Arnaud Rosiak</h1>
+        <h1 class="header__brand"><a href="index.html" class="brand">Arnaud Rosiak</a></h1>
         <nav class="header__navbar">
             <ul class="header__navbar__list">
                 <li class="header__navbar__list__item"><a href="" class="header__navbar__list__item__link">CV</a></li>
@@ -19,29 +19,22 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h1 class="title_projects">Liste de mes projets</h1>
-        <section class="projects">
-            <a href="https://github.com/arsiak/movitech" class="fill-div">
-            <article class="project">
-                <img src="static/images/movitech_screenshot.png" alt="Photo projet moovitech" class="project__img">
-                <h2 class="project_descr"> Movitech </h2>
-            </article>
-            </a>
-
-            <article class="project">
-                <img src="" alt="" class="project__img">
-                <h2 class="project_descr"></h2>
-            </article>
-            <article class="project">
-                <img src="" alt="" class="project__img">
-                <h2 class="project_descr"></h2>
-            </article>
-            <article class="project">
-                <img src="" alt="" class="project__img">
-                <h2 class="project_descr"></h2>
-            </article>
-        </section>
+    <main class="container-descr-project">
+        <h1 class="title_projects">Sentinel</h1>
+        <div class="container-movitech-img">
+            <img class="img-movitech" src="static/images/sentinel_screenshot.png"/>
+        </div>
+        <div>
+            <p>Projet effectué dans le cadre du cours de communication de 1ere année de DUT informatique à l'IUT Nancy charlemagne</p>
+            <h3>Objectifs</h3>
+            <p>Apprendre le Html/Css en construisant un roman interactif à multiple embranchements </p>
+            <p>Découvrir la rédaction de contenus pour le web </p>
+            <h3>Collaborateurs</h3>
+            <p>Equipe composée de Quentin Thouvenot, Luc André, Alan Marin et Arnaud Rosiak et sous la supervision de Julien Falgas maître de conférence à l'Université de Lorraine </p>
+        </div>
+        <div>
+            <p>Voir le code source sur <a href="https://github.com/arsiak/WebRoman-Interactif"> https://github.com/arsiak/WebRoman-Interactif </a> </p>
+        </div>
     </main>
     <footer>
         <p>Made by Arnaud Rosiak with ...</p>

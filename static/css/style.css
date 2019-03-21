@@ -44,7 +44,7 @@ body {
   color: #333;
   line-height: 1.4em;
 }
-@media (min-width: 900px) {
+@media (max-width: 900px) {
   body {
     font-size: 2rem;
   }
@@ -229,6 +229,16 @@ html, body {
   margin: 0;
 }
 
+.container-descr-project {
+  width: 40%;
+  margin: auto;
+}
+@media (max-width: 599px) {
+  .container-descr-project {
+    width: 80%;
+  }
+}
+
 .project {
   border: 1px solid black;
   position: relative;
@@ -247,6 +257,10 @@ html, body {
 .project:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
   transition: box-shadow 0.3s ease-in-out;
+}
+
+.title_projects {
+  text-align: center;
 }
 
 .project_descr {
@@ -272,6 +286,41 @@ html, body {
   text-decoration: none;
   z-index: 10;
   opacity: 0;
+}
+
+iframe {
+  width: 50%;
+  height: 1000px;
+}
+@media (max-width: 1200px) {
+  iframe {
+    height: 700px;
+  }
+}
+@media (max-width: 900px) {
+  iframe {
+    height: 600px;
+  }
+}
+@media (max-width: 599px) {
+  iframe {
+    height: 400px;
+  }
+}
+
+.cv_zone {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.container-movitech-img .img-movitech {
+  max-width: 100%;
+  height: auto;
+}
+
+.brand {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
